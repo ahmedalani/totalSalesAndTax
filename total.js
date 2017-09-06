@@ -9,7 +9,7 @@ var companySalesData = [
     name: "Telus",
     province: "BC",
     sales: [ 100, 200, 400 ]
-  },
+  }
   {
     name: "Bombardier",
     province: "AB",
@@ -54,13 +54,13 @@ function calculateSalesTax(salesData, taxRates) {
 
     output[inObj.name].totalSales += sumOfSales;
     output[inObj.name].totalTaxes += sumOfTaxes;
-     console.log(output[inObj.name]);
+    console.log(output[inObj.name]);
   }
   return output;
 }
 
 var results = calculateSalesTax(companySalesData, salesTaxRates);
-console.log(results);
+console.log(results);Ï
 
 /* Expected Results:
 {
